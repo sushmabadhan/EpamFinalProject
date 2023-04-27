@@ -11,11 +11,11 @@ public class LoginPageTest
     public void verifyLoginTest() throws InterruptedException
     { driver=FactoryBrowser.setupBrowser("edge","https://www.ebay.com/signin/");
         LoginPage loginPageUpdate=PageFactory.initElements(driver, LoginPage.class);
-        Thread.sleep(20000);
+        Thread.sleep(2000);
         loginPageUpdate.enterUsername("aniketkar96@gmail.com");
         Thread.sleep(2000);
         loginPageUpdate.con();
-        Thread.sleep(20000);
+        Thread.sleep(2000);
         loginPageUpdate.enterPassword("aniket12");
         Thread.sleep(2000);
         loginPageUpdate.login();

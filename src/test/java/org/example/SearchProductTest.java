@@ -11,11 +11,11 @@ public class SearchProductTest
     public void verifySearch() throws InterruptedException
     { driver=FactoryBrowser.setupBrowser("edge","https://www.ebay.com/signin/");
         SearchProduct SearchProductUpdate=PageFactory.initElements(driver, SearchProduct.class);
-        Thread.sleep(20000);
+        Thread.sleep(2000);
         SearchProductUpdate.enterUsername("aniketkar96@gmail.com");
         Thread.sleep(2000);
         SearchProductUpdate.con();
-        Thread.sleep(20000);
+        Thread.sleep(2000);
         SearchProductUpdate.enterPassword("aniket12");
         Thread.sleep(2000);
         SearchProductUpdate.login();
