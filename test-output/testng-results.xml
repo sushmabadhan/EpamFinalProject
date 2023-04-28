@@ -6,8 +6,8 @@
     <groups>
     </groups>
     <test started-at="2023-04-27T18:00:48 IST" name="test1" finished-at="2023-04-27T18:01:35 IST" duration-ms="46984">
-      <class name="org.example.LoginPageTest">
-        <test-method signature="verifyLoginTest()[pri:0, instance:org.example.LoginPageTest@4445629]" started-at="2023-04-27T18:00:48 IST" name="verifyLoginTest" finished-at="2023-04-27T18:01:35 IST" duration-ms="46825" status="FAIL">
+      <class name="org.example.SignInPageTest">
+        <test-method signature="verifyLoginTest()[pri:0, instance:org.example.SignInPageTest@4445629]" started-at="2023-04-27T18:00:48 IST" name="verifyLoginTest" finished-at="2023-04-27T18:01:35 IST" duration-ms="46825" status="FAIL">
           <exception class="org.openqa.selenium.ElementNotInteractableException">
             <message>
               <![CDATA[element not interactable
@@ -21,7 +21,7 @@ Element: [[EdgeDriver: msedge on WINDOWS (46f0049f321ded606f9c3d0189b8eee9)] -> 
 Session ID: 46f0049f321ded606f9c3d0189b8eee9]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+                <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
   (Session info: MicrosoftEdge=112.0.1722.58)
 Build info: version: '4.8.2', revision: '826dbfc730'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19'
@@ -46,8 +46,8 @@ at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethod
 at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
 at jdk.proxy2/jdk.proxy2.$Proxy13.sendKeys(Unknown Source)
-at org.example.LoginPage.enterPassword(LoginPage.java:20)
-at org.example.LoginPageTest.verifyLoginTest(LoginPageTest.java:19)
+at org.example.SignInPage.enterPassword(LoginPage.java:20)
+at org.example.SignInPageTest.verifyLoginTest(LoginPageTest.java:19)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -79,7 +79,7 @@ at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginTest -->
-      </class> <!-- org.example.LoginPageTest -->
+      </class> <!-- org.example.SignInPageTest -->
     </test> <!-- test1 -->
     <test started-at="2023-04-27T18:01:35 IST" name="test2" finished-at="2023-04-27T18:02:28 IST" duration-ms="53298">
       <class name="org.example.SavedDetailsTest">

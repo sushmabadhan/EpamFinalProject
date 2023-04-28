@@ -14,62 +14,72 @@
 <tr><td><a href="#t2">test3</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">40,290</td><td></td><td></td></tr>
 <tr><th>Total</th><th class="num">1</th><th class="num">0</th><th class="num">0</th><th class="num attn">2</th><th class="num">140,572</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">All Test Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">test1 &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">org.example.LoginPageTest</td><td><a href="#m0">verifyLoginTest</a></td><td rowspan="1">1682598648225</td><td rowspan="1">46825</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">All Test Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">test1 &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">org.example.SignInPageTest</td><td><a href="#m0">verifyLoginTest</a></td><td rowspan="1">1682598648225</td><td rowspan="1">46825</td></tr></tbody>
 <tbody id="t1"><tr><th colspan="4">test2 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">org.example.SavedDetailsTest</td><td><a href="#m1">verifySavedDetailsTest</a></td><td rowspan="1">1682598695223</td><td rowspan="1">53290</td></tr></tbody>
 <tbody id="t2"><tr><th colspan="4">test3 &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">org.example.SearchProductTest</td><td><a href="#m2">verifySearch</a></td><td rowspan="1">1682598748538</td><td rowspan="1">40274</td></tr></tbody>
 </table>
-<h2>test1</h2><h3 id="m0">org.example.LoginPageTest#verifyLoginTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: MicrosoftEdge=112.0.1722.58)
-Build info: version: &apos;4.8.2&apos;, revision: &apos;826dbfc730&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [46f0049f321ded606f9c3d0189b8eee9, sendKeysToElement {id=9157733c-84f9-4f64-9e30-10cf778911c7, value=[Ljava.lang.CharSequence;@1a480135}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 112.0.1722.58, ms:edgeOptions: {debuggerAddress: localhost:61775}, msedge: {msedgedriverVersion: 112.0.1722.58 (4dc3f55bfaec..., userDataDir: C:\Users\hp\AppData\Local\T...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61775/devtoo..., se:cdpVersion: 112.0.1722.58, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[EdgeDriver: msedge on WINDOWS (46f0049f321ded606f9c3d0189b8eee9)] -&gt; xpath: //input[@id=&apos;pass&apos;]]
-Session ID: 46f0049f321ded606f9c3d0189b8eee9
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:113)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at jdk.proxy2/jdk.proxy2.$Proxy13.sendKeys(Unknown Source)
-	at org.example.LoginPage.enterPassword(LoginPage.java:20)
-	at org.example.LoginPageTest.verifyLoginTest(LoginPageTest.java:19)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:829)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+<h2>test1</h2><h3 id="m0">org.example.SignInPageTest#verifyLoginTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementNotInteractableException:
+    element not interactable
+    (Session info: MicrosoftEdge=112.0.1722.58)
+    Build info: version: &apos;4.8.2&apos;, revision: &apos;826dbfc730&apos;
+    System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;,
+    java.version: &apos;19&apos;
+    Driver info: org.openqa.selenium.edge.EdgeDriver
+    Command: [46f0049f321ded606f9c3d0189b8eee9, sendKeysToElement {id=9157733c-84f9-4f64-9e30-10cf778911c7,
+    value=[Ljava.lang.CharSequence;@1a480135}]
+    Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 112.0.1722.58, ms:edgeOptions:
+    {debuggerAddress: localhost:61775}, msedge: {msedgedriverVersion: 112.0.1722.58 (4dc3f55bfaec..., userDataDir:
+    C:\Users\hp\AppData\Local\T...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS,
+    proxy: Proxy(), se:cdp: ws://localhost:61775/devtoo..., se:cdpVersion: 112.0.1722.58, setWindowRect: true,
+    strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior:
+    dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true,
+    webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+    Element: [[EdgeDriver: msedge on WINDOWS (46f0049f321ded606f9c3d0189b8eee9)] -&gt; xpath: //input[@id=&apos;pass&apos;]]
+    Session ID: 46f0049f321ded606f9c3d0189b8eee9
+    at
+    java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+    at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+    at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+    at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+    at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+    at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+    at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+    at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+    at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+    at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+    at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+    at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:113)
+    at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+    at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+    at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+    at jdk.proxy2/jdk.proxy2.$Proxy13.sendKeys(Unknown Source)
+    at org.example.SignInPage.enterPassword(LoginPage.java:20)
+    at org.example.SignInPageTest.verifyLoginTest(LoginPageTest.java:19)
+    at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+    at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+    at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+    at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+    at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+    at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+    at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+    at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+    at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+    at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+    at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+    at org.testng.TestRunner.privateRun(TestRunner.java:829)
+    at org.testng.TestRunner.run(TestRunner.java:602)
+    at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+    at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+    at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+    at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+    at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+    at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+    at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+    at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+    at org.testng.TestNG.runSuites(TestNG.java:1099)
+    at org.testng.TestNG.run(TestNG.java:1067)
+    at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+    at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h2>test2</h2><h3 id="m1">org.example.SavedDetailsTest#verifySavedDetailsTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h2>test3</h2><h3 id="m2">org.example.SearchProductTest#verifySearch</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementNotInteractableException: element not interactable

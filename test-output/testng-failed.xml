@@ -5,11 +5,11 @@
     <parameter name="browser" value="edge"/>
     <parameter name="url" value="https://www.google.com/"/>
     <classes>
-      <class name="org.example.LoginPageTest">
+      <class name="org.example.SignInPageTest">
         <methods>
           <include name="verifyLoginTest"/>
         </methods>
-      </class> <!-- org.example.LoginPageTest -->
+      </class> <!-- org.example.SignInPageTest -->
     </classes>
   </test> <!-- test1(failed) -->
   <test thread-count="5" name="test3(failed)">

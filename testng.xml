@@ -2,27 +2,14 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
     <test verbose="2" preserve-order="true"
-          name="test1">
-        <parameter name="browser" value="edge"></parameter>
-        <parameter name="url" value="https://www.google.com/"></parameter>
+          name="C:/Users/hp/IdeaProjects/EpamFinalProject/src/test/java/org/example/LoginPageTest.java">
         <classes>
-            <class name="org.example.LoginPageTest"></class>
-        </classes>
-    </test>
-    <test verbose="2" preserve-order="true"
-          name="test2">
-        <parameter name="browser" value="edge"></parameter>
-        <parameter name="url" value="https://www.google.com/"></parameter>
-        <classes>
-            <class name="org.example.SavedDetailsTest"></class>
-        </classes>
-    </test>
-    <test verbose="2" preserve-order="true"
-          name="test3">
-        <parameter name="browser" value="edge"></parameter>
-        <parameter name="url" value="https://www.google.com/"></parameter>
-        <classes>
-            <class name="org.example.SearchProductTest"></class>
+            <class name="org.example.SignInPageTest">
+                <methods>
+                    <include name="verifyLoginTest"/>
+                    <include name="Saved"/>
+                </methods>
+            </class>
         </classes>
     </test>
 </suite>

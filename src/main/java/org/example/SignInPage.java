@@ -2,7 +2,7 @@ package org.example;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-public class LoginPage
+public class SignInPage
 {
     WebDriver driver;
     @FindBy(xpath="//input[@id='userid']")
@@ -13,10 +13,11 @@ public class LoginPage
     WebElement pass;
     @FindBy(xpath = "//button[@id='sgnBt']")
 
-    WebElement loginButton;
-    public LoginPage(WebDriver driver) {this.driver = driver;}
+    WebElement SignInButton;
+
+    public SignInPage(WebDriver driver) {this.driver = driver;}
     public void enterUsername(String username){uname.sendKeys(username);}
     public void con(){cont.click();}
     public void enterPassword(String password){pass.sendKeys(password);}
-    public void login(){loginButton.click();}
+    public void login(){SignInButton.click();}
 }
