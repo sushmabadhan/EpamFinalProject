@@ -21,7 +21,7 @@ public class SignInPageTest {
         Thread.sleep(30000);
         driver.quit();
         Thread.sleep(2000);
-        System.out.println("SignIn successfully.");
+        System.out.println("SignIn done successfully.");
     }
 
 }
