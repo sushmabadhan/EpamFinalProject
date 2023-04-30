@@ -10,11 +10,11 @@ public class SignOutPageTest {
         driver = FactoryBrowser.setupBrowser("chrome", "https://www.ebay.com/signin/");
         SignOutPage signOutPageUpdate = PageFactory.initElements(driver, SignOutPage.class);
         Thread.sleep(30000);
-        signOutPageUpdate.enterUsername("aniketkar96@gmail.com");
+        signOutPageUpdate.enterUsername("sushmabadhan01@gmail.com");
         Thread.sleep(2000);
         signOutPageUpdate.con();
         Thread.sleep(30000);
-        signOutPageUpdate.enterPassword("aniket12");
+        signOutPageUpdate.enterPassword("Badhan@123");
         Thread.sleep(2000);
         signOutPageUpdate.signIn();
         Thread.sleep(30000);

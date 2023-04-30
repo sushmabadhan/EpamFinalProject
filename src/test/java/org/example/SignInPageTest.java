@@ -11,11 +11,11 @@ public class SignInPageTest {
         driver = FactoryBrowser.setupBrowser("chrome", "https://www.ebay.com/signin/");
         SignInPage SignInPageUpdate = PageFactory.initElements(driver, SignInPage.class);
         Thread.sleep(30000);
-        SignInPageUpdate.enterUsername("aniketkar96@gmail.com");
+        SignInPageUpdate.enterUsername("sushmabadhan01@gmail.com");
         Thread.sleep(2000);
         SignInPageUpdate.con();
         Thread.sleep(30000);
-        SignInPageUpdate.enterPassword("aniket12");
+        SignInPageUpdate.enterPassword("Badhan@123");
         Thread.sleep(2000);
         SignInPageUpdate.login();
         Thread.sleep(30000);

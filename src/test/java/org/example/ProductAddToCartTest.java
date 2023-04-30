@@ -11,11 +11,11 @@ public class ProductAddToCartTest
     { driver=FactoryBrowser.setupBrowser("chrome","https://www.ebay.com/signin/");
         ProductAddToCart ProductAdd=PageFactory.initElements(driver, ProductAddToCart.class);
         Thread.sleep(30000);
-        ProductAdd.enterUsername("aniketkar96@gmail.com");
+        ProductAdd.enterUsername("sushmabadhan01@gmail.com");
         Thread.sleep(2000);
         ProductAdd.con();
         Thread.sleep(30000);
-        ProductAdd.enterPassword("aniket12");
+        ProductAdd.enterPassword("Badhan@123");
         Thread.sleep(2000);
         ProductAdd.signIn();
         Thread.sleep(30000);

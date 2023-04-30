@@ -12,11 +12,11 @@ public class ItemCheckOutTest
         driver=FactoryBrowser.setupBrowser("chrome","https://www.ebay.com/signin/");
         ItemCheckOut checkOutUpdate=PageFactory.initElements(driver, ItemCheckOut.class);
         Thread.sleep(30000);
-        checkOutUpdate.enterUsername("aniketkar96@gmail.com");
+        checkOutUpdate.enterUsername("sushmabadhan01@gmail.com");
         Thread.sleep(2000);
         checkOutUpdate.con();
         Thread.sleep(30000);
-        checkOutUpdate.enterPassword("aniket12");
+        checkOutUpdate.enterPassword("Badhan@123");
         Thread.sleep(2000);
         checkOutUpdate.signIn();
         Thread.sleep(30000);
