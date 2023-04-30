@@ -26,6 +26,6 @@ public class ItemCheckOutTest
         Thread.sleep(2000);
         driver.quit();
         Thread.sleep(2000);
-        System.out.println("Checkout done successfully");
+        System.out.println("Checkout done successfully.");
     }
 }
