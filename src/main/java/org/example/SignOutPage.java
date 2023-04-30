@@ -13,7 +13,7 @@ public class SignOutPage
     WebElement pass;
     @FindBy(xpath = "//button[@id='sgnBt']")
 
-    WebElement loginButton;
+    WebElement signInButton;
     @FindBy(xpath = "//header/div[@id='gh-top']/ul[@id='gh-topl']/li[@id='gh-eb-u']/button[@id='gh-ug']/b[2]")
 
     WebElement SignArrowButton;
@@ -25,7 +25,7 @@ public class SignOutPage
     public void enterUsername(String username){uname.sendKeys(username);}
     public void con(){cont.click();}
     public void enterPassword(String password){pass.sendKeys(password);}
-    public void login(){loginButton.click();}
+    public void signIn(){signInButton.click();}
     public void sighArrow(){SignArrowButton.click();}
     public void signOut(){SignOutButton.click();}
 }

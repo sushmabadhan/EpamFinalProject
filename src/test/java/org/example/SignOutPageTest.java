@@ -5,25 +5,26 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 public class SignOutPageTest {
     WebDriver driver;
-
     @Test( priority = 1 )
-    public void verifyLoginTest() throws InterruptedException {
-        driver = FactoryBrowser.setupBrowser("crome", "https://www.ebay.com/signin/");
-        SignOutPage loginPageUpdate = PageFactory.initElements(driver, SignOutPage.class);
+    public void verifySignOutTest() throws InterruptedException {
+        driver = FactoryBrowser.setupBrowser("chrome", "https://www.ebay.com/signin/");
+        SignOutPage signOutPageUpdate = PageFactory.initElements(driver, SignOutPage.class);
         Thread.sleep(30000);
-        loginPageUpdate.enterUsername("aniketkar96@gmail.com");
+        signOutPageUpdate.enterUsername("aniketkar96@gmail.com");
         Thread.sleep(2000);
-        loginPageUpdate.con();
+        signOutPageUpdate.con();
         Thread.sleep(30000);
-        loginPageUpdate.enterPassword("aniket12");
+        signOutPageUpdate.enterPassword("aniket12");
         Thread.sleep(2000);
-        loginPageUpdate.login();
+        signOutPageUpdate.signIn();
         Thread.sleep(30000);
-        loginPageUpdate.sighArrow();
+        signOutPageUpdate.sighArrow();
         Thread.sleep(2000);
-        loginPageUpdate.signOut();
+        signOutPageUpdate.signOut();
         Thread.sleep(2000);
         driver.quit();
+        Thread.sleep(2000);
+        System.out.println("SignOut done successfully.");
     }
 
 }

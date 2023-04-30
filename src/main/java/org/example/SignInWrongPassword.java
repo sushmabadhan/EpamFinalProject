@@ -18,5 +18,5 @@ public class SignInWrongPassword
     public void enterUsername(String username){uname.sendKeys(username);}
     public void con(){cont.click();}
     public void enterPassword(String password){pass.sendKeys(password);}
-    public void login(){SignInButton.click();}
+    public void SignIn(){SignInButton.click();}
 }

@@ -12,7 +12,7 @@ public class SearchProduct
     @FindBy(xpath = "//input[@id='pass']")
     WebElement pass;
     @FindBy(xpath = "//button[@id='sgnBt']")
-    WebElement loginButton;
+    WebElement signInButton;
     @FindBy(xpath = "//input[@id='gh-ac']")
     WebElement searchBar;
     @FindBy(xpath = "//input[@id='gh-btn']")
@@ -21,7 +21,7 @@ public class SearchProduct
     public void enterUsername(String username){uname.sendKeys(username);}
     public void con(){cont.click();}
     public void enterPassword(String password){pass.sendKeys(password);}
-    public void login(){loginButton.click();}
+    public void signIn(){signInButton.click();}
     public void typeSearch(String Search){searchBar.sendKeys(Search);}
     public void enterSearch(){searchButton.click();}
 }

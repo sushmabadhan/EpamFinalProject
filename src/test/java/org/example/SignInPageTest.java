@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 public class SignInPageTest {
     WebDriver driver;
 
-    @Test( priority = 1 )
+    @Test
     public void VerifySignInTest() throws InterruptedException {
         driver = FactoryBrowser.setupBrowser("chrome", "https://www.ebay.com/signin/");
         SignInPage SignInPageUpdate = PageFactory.initElements(driver, SignInPage.class);
@@ -20,6 +20,8 @@ public class SignInPageTest {
         SignInPageUpdate.login();
         Thread.sleep(30000);
         driver.quit();
+        Thread.sleep(2000);
+        System.out.println("SignIn successfully.");
     }
 
 }

@@ -7,23 +7,25 @@ public class ItemCheckOutTest
 {
     WebDriver driver;
     @Test
-    public void verifySavedDetailsTest() throws InterruptedException
+    public void verifyCheckOutTest() throws InterruptedException
     {
-        driver=FactoryBrowser.setupBrowser("edge","https://www.ebay.com/signin/");
-        ItemCheckOut SaveDetailUpdate=PageFactory.initElements(driver, ItemCheckOut.class);
+        driver=FactoryBrowser.setupBrowser("chrome","https://www.ebay.com/signin/");
+        ItemCheckOut checkOutUpdate=PageFactory.initElements(driver, ItemCheckOut.class);
         Thread.sleep(30000);
-        SaveDetailUpdate.enterUsername("aniketkar96@gmail.com");
+        checkOutUpdate.enterUsername("aniketkar96@gmail.com");
         Thread.sleep(2000);
-        SaveDetailUpdate.con();
+        checkOutUpdate.con();
         Thread.sleep(30000);
-        SaveDetailUpdate.enterPassword("aniket12");
+        checkOutUpdate.enterPassword("aniket12");
         Thread.sleep(2000);
-        SaveDetailUpdate.login();
+        checkOutUpdate.signIn();
         Thread.sleep(30000);
-        SaveDetailUpdate.openCart();
-        Thread.sleep(4000);
-        SaveDetailUpdate.itemCheckout();
-        Thread.sleep(4000);
+        checkOutUpdate.openCart();
+        Thread.sleep(2000);
+        checkOutUpdate.itemCheckout();
+        Thread.sleep(2000);
         driver.quit();
+        Thread.sleep(2000);
+        System.out.println("Checkout done successfully");
     }
 }

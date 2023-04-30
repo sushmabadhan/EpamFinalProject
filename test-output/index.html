@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-All_Test_Suite" class="navigator-link">
-              <span class="suite-name border-failed">All Test Suite</span>
+              <span class="suite-name border-passed">All Test Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -55,7 +55,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-All_Test_Suite" class="navigator-link ">
-                    <span class="test-stats">3 tests</span>
+                    <span class="test-stats">8 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,26 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 2 failed,   1 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-All_Test_Suite" class="hide-methods failed suite-All_Test_Suite"> (hide)</a> <!-- hide-methods failed suite-All_Test_Suite -->
-                      <a href="#" panel-name="suite-All_Test_Suite" class="show-methods failed suite-All_Test_Suite"> (show)</a> <!-- show-methods failed suite-All_Test_Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-All_Test_Suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-All_Test_Suite" title="org.example.SignInPageTest" class="method navigator-link" hash-for-method="verifyLoginTest">verifyLoginTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-All_Test_Suite" title="org.example.SearchProductTest" class="method navigator-link" hash-for-method="verifySearch">verifySearch</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-All_Test_Suite -->
+                    <span class="method-stats">8 methods,   8 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -122,7 +103,42 @@
                     <div class="method-list-content passed suite-All_Test_Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="org.example.SignInPageTest" class="method navigator-link" hash-for-method="VerifySignInTest">VerifySignInTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="org.example.ItemCheckOutTest" class="method navigator-link" hash-for-method="verifyCheckOutTest">verifyCheckOutTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="org.example.ProductAddToCartTest" class="method navigator-link" hash-for-method="verifyProductAddToCart">verifyProductAddToCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="org.example.RemoveCartTest" class="method navigator-link" hash-for-method="verifyRemoveCartTest">verifyRemoveCartTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-All_Test_Suite" title="org.example.SavedDetailsTest" class="method navigator-link" hash-for-method="verifySavedDetailsTest">verifySavedDetailsTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="org.example.SearchProductTest" class="method navigator-link" hash-for-method="verifySearch">verifySearch</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="org.example.SignInWrongPasswordTest" class="method navigator-link" hash-for-method="verifySignInWrongTest">verifySignInWrongTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="org.example.SignOutPageTest" class="method navigator-link" hash-for-method="verifySignOutTest">verifySignOutTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-All_Test_Suite -->
@@ -137,9 +153,24 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-All_Test_Suite" class="panel All_Test_Suite">
-          <div class="suite-All_Test_Suite-class-failed">
+          <div class="suite-All_Test_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
+              <span class="class-name">org.example.ItemCheckOutTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyCheckOutTest">
+                  </a> <!-- verifyCheckOutTest -->
+                  <span class="method-name">verifyCheckOutTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-passed -->
+          <div class="suite-All_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
               <span class="class-name">org.example.SearchProductTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -148,152 +179,10 @@
                   <a name="verifySearch">
                   </a> <!-- verifySearch -->
                   <span class="method-name">verifySearch</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: MicrosoftEdge=112.0.1722.58)
-Build info: version: &apos;4.8.2&apos;, revision: &apos;826dbfc730&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [c8077eee5d4b3bdaacf0b27c8055947a, sendKeysToElement {id=b7309c7e-8d47-40dd-b8f6-4ef60411ed98, value=[Ljava.lang.CharSequence;@6884f0d9}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 112.0.1722.58, ms:edgeOptions: {debuggerAddress: localhost:62120}, msedge: {msedgedriverVersion: 112.0.1722.58 (4dc3f55bfaec..., userDataDir: C:\Users\hp\AppData\Local\T...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62120/devtoo..., se:cdpVersion: 112.0.1722.58, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[EdgeDriver: msedge on WINDOWS (c8077eee5d4b3bdaacf0b27c8055947a)] -&gt; xpath: //input[@id=&apos;pass&apos;]]
-Session ID: c8077eee5d4b3bdaacf0b27c8055947a
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:113)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at jdk.proxy2/jdk.proxy2.$Proxy13.sendKeys(Unknown Source)
-	at org.example.SearchProduct.enterPassword(SearchProduct.java:23)
-	at org.example.SearchProductTest.verifySearch(SearchProductTest.java:19)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:829)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
-
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-All_Test_Suite-class-failed -->
-          <div class="suite-All_Test_Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">org.example.SignInPageTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyLoginTest">
-                  </a> <!-- verifyLoginTest -->
-                  <span class="method-name">verifyLoginTest</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: element not interactable
-                      (Session info: MicrosoftEdge=112.0.1722.58)
-                      Build info: version: &apos;4.8.2&apos;, revision: &apos;826dbfc730&apos;
-                      System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;,
-                      java.version: &apos;19&apos;
-                      Driver info: org.openqa.selenium.edge.EdgeDriver
-                      Command: [46f0049f321ded606f9c3d0189b8eee9, sendKeysToElement
-                      {id=9157733c-84f9-4f64-9e30-10cf778911c7, value=[Ljava.lang.CharSequence;@1a480135}]
-                      Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 112.0.1722.58,
-                      ms:edgeOptions: {debuggerAddress: localhost:61775}, msedge: {msedgedriverVersion: 112.0.1722.58
-                      (4dc3f55bfaec..., userDataDir: C:\Users\hp\AppData\Local\T...}, networkConnectionEnabled: false,
-                      pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp:
-                      ws://localhost:61775/devtoo..., se:cdpVersion: 112.0.1722.58, setWindowRect: true,
-                      strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000},
-                      unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true,
-                      webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf:
-                      true, webauthn:virtualAuthenticators: true}
-                      Element: [[EdgeDriver: msedge on WINDOWS (46f0049f321ded606f9c3d0189b8eee9)] -&gt; xpath:
-                      //input[@id=&apos;pass&apos;]]
-                      Session ID: 46f0049f321ded606f9c3d0189b8eee9
-                      at
-                      java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-                      at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-                      at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-                      at
-                      org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-                      at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-                      at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-                      at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
-                      at
-                      org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
-                      at
-                      org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
-                      at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-                      at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-                      at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:113)
-                      at
-                      java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-                      at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-                      at
-                      org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-                      at jdk.proxy2/jdk.proxy2.$Proxy13.sendKeys(Unknown Source)
-                      at org.example.SignInPage.enterPassword(LoginPage.java:20)
-                      at org.example.SignInPageTest.verifyLoginTest(LoginPageTest.java:19)
-                      at
-                      java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-                      at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-                      at
-                      org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-                      at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-                      at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-                      at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-                      at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-                      at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-                      at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-                      at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-                      at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-                      at org.testng.TestRunner.privateRun(TestRunner.java:829)
-                      at org.testng.TestRunner.run(TestRunner.java:602)
-                      at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-                      at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-                      at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-                      at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-                      at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-                      at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-                      at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-                      at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-                      at org.testng.TestNG.runSuites(TestNG.java:1099)
-                      at org.testng.TestNG.run(TestNG.java:1067)
-                      at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
-                      at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
-
-                  </div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-All_Test_Suite-class-failed -->
+          </div> <!-- suite-All_Test_Suite-class-passed -->
           <div class="suite-All_Test_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -309,6 +198,81 @@ Session ID: c8077eee5d4b3bdaacf0b27c8055947a
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-All_Test_Suite-class-passed -->
+          <div class="suite-All_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">org.example.ProductAddToCartTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyProductAddToCart">
+                  </a> <!-- verifyProductAddToCart -->
+                  <span class="method-name">verifyProductAddToCart</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-passed -->
+          <div class="suite-All_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">org.example.SignInPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifySignInTest">
+                  </a> <!-- VerifySignInTest -->
+                  <span class="method-name">VerifySignInTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-passed -->
+          <div class="suite-All_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">org.example.SignInWrongPasswordTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySignInWrongTest">
+                  </a> <!-- verifySignInWrongTest -->
+                  <span class="method-name">verifySignInWrongTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-passed -->
+          <div class="suite-All_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">org.example.SignOutPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySignOutTest">
+                  </a> <!-- verifySignOutTest -->
+                  <span class="method-name">verifySignOutTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-passed -->
+          <div class="suite-All_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">org.example.RemoveCartTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyRemoveCartTest">
+                  </a> <!-- verifyRemoveCartTest -->
+                  <span class="method-name">verifyRemoveCartTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-passed -->
         </div> <!-- panel All_Test_Suite -->
         <div panel-name="test-xml-All_Test_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -319,27 +283,62 @@ Session ID: c8077eee5d4b3bdaacf0b27c8055947a
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;All Test Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;test1&quot; verbose=&quot;2&quot;&gt;
-    &lt;parameter name=&quot;browser&quot; value=&quot;edge&quot;/&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test1&quot; verbose=&quot;2&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;parameter name=&quot;url&quot; value=&quot;https://www.google.com/&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;org.example.SignInWrongPasswordTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test1 --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test2&quot; verbose=&quot;2&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;parameter name=&quot;url&quot; value=&quot;https://www.google.com/&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;org.example.SignInPageTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- test1 --&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;test2&quot; verbose=&quot;2&quot;&gt;
-    &lt;parameter name=&quot;browser&quot; value=&quot;edge&quot;/&gt;
+  &lt;/test&gt; &lt;!-- Test2 --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test3&quot; verbose=&quot;2&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;parameter name=&quot;url&quot; value=&quot;https://www.google.com/&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;org.example.SavedDetailsTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- test2 --&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;test3&quot; verbose=&quot;2&quot;&gt;
-    &lt;parameter name=&quot;browser&quot; value=&quot;edge&quot;/&gt;
+  &lt;/test&gt; &lt;!-- Test3 --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test4&quot; verbose=&quot;2&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;parameter name=&quot;url&quot; value=&quot;https://www.google.com/&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;org.example.SearchProductTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- test3 --&gt;
+  &lt;/test&gt; &lt;!-- Test4 --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test5&quot; verbose=&quot;2&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;parameter name=&quot;url&quot; value=&quot;https://www.google.com/&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;org.example.ProductAddToCartTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test5 --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test6&quot; verbose=&quot;2&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;parameter name=&quot;url&quot; value=&quot;https://www.google.com/&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;org.example.RemoveCartTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test6 --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test7&quot; verbose=&quot;2&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;parameter name=&quot;url&quot; value=&quot;https://www.google.com/&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;org.example.ItemCheckOutTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test7 --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test8&quot; verbose=&quot;2&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;parameter name=&quot;url&quot; value=&quot;https://www.google.com/&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;org.example.SignOutPageTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test8 --&gt;
 &lt;/suite&gt; &lt;!-- All Test Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -351,13 +350,28 @@ Session ID: c8077eee5d4b3bdaacf0b27c8055947a
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">test1 (1 class)</span>
+                <span class="test-name">Test1 (1 class)</span>
               </li>
               <li>
-                <span class="test-name">test2 (1 class)</span>
+                <span class="test-name">Test2 (1 class)</span>
               </li>
               <li>
-                <span class="test-name">test3 (1 class)</span>
+                <span class="test-name">Test3 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Test4 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Test5 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Test6 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Test7 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Test8 (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -383,24 +397,44 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(8);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifySavedDetailsTest')
-data.setCell(0, 2, 'org.example.SavedDetailsTest')
-data.setCell(0, 3, 53290);
+data.setCell(0, 1, 'verifyProductAddToCart')
+data.setCell(0, 2, 'org.example.ProductAddToCartTest')
+data.setCell(0, 3, 128660);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyLoginTest')
-data.setCell(1, 2, 'org.example.SignInPageTest')
-data.setCell(1, 3, 46825);
+data.setCell(1, 1, 'verifyCheckOutTest')
+data.setCell(1, 2, 'org.example.ItemCheckOutTest')
+data.setCell(1, 3, 126859);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifySearch')
-data.setCell(2, 2, 'org.example.SearchProductTest')
-data.setCell(2, 3, 40274);
+data.setCell(2, 1, 'verifySignOutTest')
+data.setCell(2, 2, 'org.example.SignOutPageTest')
+data.setCell(2, 3, 122670);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'verifySearch')
+data.setCell(3, 2, 'org.example.SearchProductTest')
+data.setCell(3, 3, 120907);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verifySignInWrongTest')
+data.setCell(4, 2, 'org.example.SignInWrongPasswordTest')
+data.setCell(4, 3, 116771);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'verifyRemoveCartTest')
+data.setCell(5, 2, 'org.example.RemoveCartTest')
+data.setCell(5, 3, 116601);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'verifySavedDetailsTest')
+data.setCell(6, 2, 'org.example.SavedDetailsTest')
+data.setCell(6, 3, 111174);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'VerifySignInTest')
+data.setCell(7, 2, 'org.example.SignInPageTest')
+data.setCell(7, 3, 104836);
 window.suiteTableData['All_Test_Suite']= { tableData: data, tableDiv: 'times-div-All_Test_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <span class="suite-total-time">Total running time: 15 minutes</span>
               <div id="times-div-All_Test_Suite">
               </div> <!-- times-div-All_Test_Suite -->
             </div> <!-- times-div -->
@@ -426,28 +460,59 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
+              <div class="chronological-class-name">org.example.SignInWrongPasswordTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifySignInWrongTest</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
               <div class="chronological-class-name">org.example.SignInPageTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">verifyLoginTest</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-name">VerifySignInTest</span>
+                <span class="method-start">116955 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">org.example.SavedDetailsTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">verifySavedDetailsTest</span>
-                <span class="method-start">46998 ms</span>
+                <span class="method-start">221849 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">org.example.SearchProductTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">verifySearch</span>
-                <span class="method-start">100313 ms</span>
+                <span class="method-start">333085 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.example.ProductAddToCartTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifyProductAddToCart</span>
+                <span class="method-start">454078 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.example.RemoveCartTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifyRemoveCartTest</span>
+                <span class="method-start">582761 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.example.ItemCheckOutTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifyCheckOutTest</span>
+                <span class="method-start">699438 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.example.SignOutPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifySignOutTest</span>
+                <span class="method-start">826415 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

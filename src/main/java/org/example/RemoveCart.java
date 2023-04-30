@@ -13,7 +13,7 @@ public class RemoveCart
     WebElement pass;
     @FindBy(xpath = "//button[@id='sgnBt']")
 
-    WebElement loginButton;
+    WebElement signIButton;
     @FindBy(xpath = "//body/div[@id='mainContent']/div[1]/ul[1]/li[2]/a[1]")
 
     WebElement saved;
@@ -27,7 +27,7 @@ public class RemoveCart
     public void enterUsername(String username){uname.sendKeys(username);}
     public void con(){cont.click();}
     public void enterPassword(String password){pass.sendKeys(password);}
-    public void login(){loginButton.click();}
+    public void signIn(){signIButton.click();}
     public void openCart(){cart.click();}
     public void itemRemove(){Remove.click();}
 }

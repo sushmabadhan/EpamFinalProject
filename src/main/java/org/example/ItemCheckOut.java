@@ -13,7 +13,7 @@ public class ItemCheckOut
     WebElement pass;
     @FindBy(xpath = "//button[@id='sgnBt']")
 
-    WebElement loginButton;
+    WebElement signInButton;
 
     @FindBy(xpath = "//header/div[@id='gh-top']/ul[@id='gh-eb']/li[@id='gh-minicart-hover']/div[1]/a[1]/*[1]")
 
@@ -31,7 +31,7 @@ public class ItemCheckOut
 
     public void enterPassword(String password){pass.sendKeys(password);}
 
-    public void login(){loginButton.click();}
+    public void signIn(){signInButton.click();}
     public void openCart(){cart.click();}
     public void itemCheckout(){checkOut.click();}
     }

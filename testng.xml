@@ -2,14 +2,67 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
     <test verbose="2" preserve-order="true"
-          name="C:/Users/hp/IdeaProjects/EpamFinalProject/src/test/java/org/example/LoginPageTest.java">
+          name="Test1">
+        <parameter name="browser" value="chrome"></parameter>
+        <parameter name="url" value="https://www.google.com/"></parameter>
         <classes>
-            <class name="org.example.SignInPageTest">
-                <methods>
-                    <include name="verifyLoginTest"/>
-                    <include name="Saved"/>
-                </methods>
-            </class>
+            <class name="org.example.SignInWrongPasswordTest"></class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true"
+          name="Test2">
+        <parameter name="browser" value="chrome"></parameter>
+        <parameter name="url" value="https://www.google.com/"></parameter>
+        <classes>
+            <class name="org.example.SignInPageTest"></class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true"
+          name="Test3">
+        <parameter name="browser" value="chrome"></parameter>
+        <parameter name="url" value="https://www.google.com/"></parameter>
+        <classes>
+            <class name="org.example.SavedDetailsTest"></class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true"
+          name="Test4">
+        <parameter name="browser" value="chrome"></parameter>
+        <parameter name="url" value="https://www.google.com/"></parameter>
+        <classes>
+            <class name="org.example.SearchProductTest"></class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true"
+          name="Test5">
+        <parameter name="browser" value="chrome"></parameter>
+        <parameter name="url" value="https://www.google.com/"></parameter>
+        <classes>
+            <class name="org.example.ProductAddToCartTest"></class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true"
+          name="Test6">
+        <parameter name="browser" value="chrome"></parameter>
+        <parameter name="url" value="https://www.google.com/"></parameter>
+        <classes>
+            <class name="org.example.RemoveCartTest"></class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true"
+          name="Test7">
+        <parameter name="browser" value="chrome"></parameter>
+        <parameter name="url" value="https://www.google.com/"></parameter>
+        <classes>
+            <class name="org.example.ItemCheckOutTest"></class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true"
+          name="Test8">
+        <parameter name="browser" value="chrome"></parameter>
+        <parameter name="url" value="https://www.google.com/"></parameter>
+        <classes>
+            <class name="org.example.SignOutPageTest"></class>
         </classes>
     </test>
 </suite>
