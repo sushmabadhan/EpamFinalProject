@@ -12,11 +12,11 @@ public class SearchProductTest
     { driver=FactoryBrowser.setupBrowser("chrome","https://www.ebay.com/signin/");
         SearchProduct SearchProductUpdate=PageFactory.initElements(driver, SearchProduct.class);
         Thread.sleep(30000);
-        SearchProductUpdate.enterUsername("sushmabadhan01@gmail.com");
+        SearchProductUpdate.enterUsername("sushmabadhan98@gmail.com");
         Thread.sleep(2000);
         SearchProductUpdate.con();
         Thread.sleep(30000);
-        SearchProductUpdate.enterPassword("Badhan@123");
+        SearchProductUpdate.enterPassword("sushma@123");
         Thread.sleep(2000);
         SearchProductUpdate.signIn();
         Thread.sleep(30000);
