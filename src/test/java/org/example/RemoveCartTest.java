@@ -13,11 +13,11 @@ public class RemoveCartTest
         driver=FactoryBrowser.setupBrowser("chrome","https://www.ebay.com/signin/");
         RemoveCart removeCartUpdate=PageFactory.initElements(driver, RemoveCart.class);
         Thread.sleep(30000);
-        removeCartUpdate.enterUsername("sushmabadhan01@gmail.com");
+        removeCartUpdate.enterUsername("sushmabadhan98@gmail.com");
         Thread.sleep(2000);
         removeCartUpdate.con();
         Thread.sleep(30000);
-        removeCartUpdate.enterPassword("Badhan@123");
+        removeCartUpdate.enterPassword("sushma@123");
         Thread.sleep(2000);
         removeCartUpdate.signIn();
         Thread.sleep(30000);
