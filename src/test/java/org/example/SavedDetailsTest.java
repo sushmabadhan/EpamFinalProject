@@ -13,11 +13,11 @@ public class SavedDetailsTest
         driver=FactoryBrowser.setupBrowser("chrome","https://www.ebay.com/signin/");
         SavedDetails SaveDetailUpdate=PageFactory.initElements(driver, SavedDetails.class);
         Thread.sleep(30000);
-        SaveDetailUpdate.enterUsername("sushmabadhan01@gmail.com");
+        SaveDetailUpdate.enterUsername("sushmabadhan98@gmail.com");
         Thread.sleep(2000);
         SaveDetailUpdate.con();
         Thread.sleep(30000);
-        SaveDetailUpdate.enterPassword("Badhan@123");
+        SaveDetailUpdate.enterPassword("sushma@123");
         Thread.sleep(2000);
         SaveDetailUpdate.signIn();
         Thread.sleep(30000);
