@@ -11,7 +11,7 @@ public class SignInWrongPasswordTest
     { driver=FactoryBrowser.setupBrowser("chrome","https://www.ebay.com/signin/");
         SignInWrongPassword SignWrong=PageFactory.initElements(driver, SignInWrongPassword.class);
         Thread.sleep(30000);
-        SignWrong.enterUsername("sushmabadhan01@gmail.com");
+        SignWrong.enterUsername("sushmabadhan98@gmail.com");
         Thread.sleep(2000);
         SignWrong.con();
         Thread.sleep(30000);
